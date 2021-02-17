@@ -17,3 +17,19 @@
   font-family: 'Pacifico', cursive;
   font-size: 50px;
 }
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+.res-container {
+  margin: 1rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border: solid green 2px;
+}

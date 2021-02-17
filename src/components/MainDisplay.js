@@ -13,7 +13,7 @@ const MainDisplay = props => {
     />)
 
     return (
-      <div>
+      <div className="grid-container">
         {allReservations}
       </div>
     )

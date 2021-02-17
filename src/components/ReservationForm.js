@@ -11,6 +11,7 @@ const ReservationForm = () => {
       <input type="Time" id="time" name="time" placeholder="Time"/>
       <label for="guests"></label>
       <input type="number" id="guests" name="guests" placeholder="Guests" min="1" max="10"/>
+      <button>Make Reservation</button>
     </div>
   )
 }

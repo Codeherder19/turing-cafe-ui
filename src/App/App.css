@@ -33,3 +33,13 @@
   background-color: white;
   border: solid green 2px;
 }
+
+.res-form {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#guests {
+  width: 4rem;
+}

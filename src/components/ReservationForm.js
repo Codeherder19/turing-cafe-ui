@@ -1,8 +1,16 @@
 import React from 'react';
 
-const ReservationForm = () => {
+class ReservationForm extends React.Component {
+  constructor() {
+    super()
+    this.state ={
+
+    }
+  }
+
+  render() {
   return (
-    <div className="res-form">
+    <form className="res-form">
       <label for="name"></label>
       <input type="text" id="name" name="name" placeholder="Name"/>
       <label for="date"></label>
@@ -12,8 +20,9 @@ const ReservationForm = () => {
       <label for="guests"></label>
       <input type="number" id="guests" name="guests" placeholder="Guests" min="1" max="10"/>
       <button>Make Reservation</button>
-    </div>
+    </form>
   )
+}
 }
 
 export default ReservationForm;

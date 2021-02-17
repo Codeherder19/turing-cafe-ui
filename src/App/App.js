@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import MainDisplay from '../components/MainDisplay';
-import resData from './reservation-data'
-
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      allReservations: resData,
+      allReservations: [],
       errorMessage: "",
     }
   }
@@ -18,6 +16,7 @@ class App extends Component {
     .then(response => response.json())
     .then(data => this.setState({
       allReservations: data,
+      errorMessage: "",
     }))
     .catch(error => {
         this.setState({errorMessage: error})

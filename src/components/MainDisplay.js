@@ -2,7 +2,7 @@ import React from 'react';
 import Reservation from './Reservation'
 
 const MainDisplay = props => {
-  const allReservations = props.reservations.map((reservation, index) => <Reservation
+  const everyReservation = props.reservations.map((reservation, index) => <Reservation
     key={index}
     id={reservation.id}
     name={reservation.name}
@@ -13,7 +13,7 @@ const MainDisplay = props => {
 
     return (
       <div className="grid-container">
-        {allReservations}
+        {everyReservation}
       </div>
     )
 }

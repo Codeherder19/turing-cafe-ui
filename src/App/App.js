@@ -8,8 +8,20 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      allReservations: resData
+      allReservations: resData,
+      errorMessage: "",
     }
+  }
+
+  componentDidMount = () => {
+    fetch('http://localhost:3001/api/v1/reservations')
+    .then(response => response.json())
+    .then(data => this.setState({
+      allReservations: data,
+    }))
+    .catch(error => {
+        this.setState({errorMessage: error})
+      })
   }
 
   render() {
